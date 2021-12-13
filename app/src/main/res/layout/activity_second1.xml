@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bkImage1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity1">
+
+    <TextView
+        android:id="@+id/tvResult1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:background="#03A9F4"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/tv_second_activity"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_second_activity"
+        app:layout_constraintTop_toBottomOf="@+id/tv_second_activity" />
+
+    <TextView
+        android:id="@+id/tv_second_activity"
+        android:layout_width="215dp"
+        android:layout_height="30dp"
+        android:background="#03A9F4"
+        android:gravity="center"
+        android:text="Hello"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.226" />
+
+    <Button
+        android:id="@+id/btSalary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Проверить зарплату"
+        app:layout_constraintEnd_toEndOf="@+id/tvResult1"
+        app:layout_constraintStart_toStartOf="@+id/tvResult1"
+        app:layout_constraintTop_toBottomOf="@+id/tvResult1" />
+
+    <Button
+        android:id="@+id/btHoliday"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Проверить отпуск"
+        app:layout_constraintEnd_toEndOf="@+id/btSalary"
+        app:layout_constraintStart_toStartOf="@+id/btSalary"
+        app:layout_constraintTop_toBottomOf="@+id/btSalary" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
