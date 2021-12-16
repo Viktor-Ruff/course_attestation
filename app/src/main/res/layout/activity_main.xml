@@ -32,7 +32,7 @@
         android:layout_height="50dp"
         android:ems="10"
         android:hint="enter your password"
-        android:inputType="text"
+        android:inputType="numberSigned|text|textCapSentences|numberDecimal|textEmailAddress|numberPassword"
         android:textSize="24sp"
         android:textStyle="bold"
         android:visibility="invisible"

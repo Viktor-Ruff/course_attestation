@@ -12,14 +12,6 @@ import com.example.course_attestation.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
     lateinit var binding : ActivityMainBinding
 
-
-
-
-
-
-
-
-
     override fun onCreate(s: Bundle?) {
         super.onCreate(s)
 
@@ -27,17 +19,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         binding.bkImage.setBackgroundResource(R.drawable.background_image)
 
-
-
         binding.btCheck.setOnClickListener {
 
             val nameUser = binding.edName.text.toString()
             Log.d("MyLog", "Result = $nameUser")
 
             when(nameUser){
-
                 Constance.Director -> {
-
                     binding.tvResult.visibility = View.INVISIBLE
                     binding.edName.visibility = View.INVISIBLE
                     binding.edPassword.visibility = View.VISIBLE
@@ -47,16 +35,11 @@ class MainActivity : AppCompatActivity() {
                         binding.imView.visibility = View.VISIBLE
                         val PasswordUser = binding.edPassword.text.toString().toInt()
 
-
                         when(PasswordUser){
-
                             Constance.Director_Password ->{
                                 val secondActivityIntent = Intent(this, SecondActivity2::class.java)
-
-
                                 secondActivityIntent.putExtra(HELLO_KEY2, ("Hello $Director"))
                                 startActivity(secondActivityIntent)
-
                             }
 
                             else -> {
@@ -83,14 +66,9 @@ class MainActivity : AppCompatActivity() {
                         binding.imView.visibility = View.VISIBLE
                         val PasswordUser = binding.edPassword.text.toString().toInt()
 
-
-
                         when(PasswordUser){
-
                             Constance.Blogger_Password ->{
-                                val secondActivityIntent = Intent(this, SecondActivity1::class.java)
-
-
+                                val secondActivityIntent = Intent(this, SecondActivity2::class.java)
                                 secondActivityIntent.putExtra(HELLO_KEY1, ("Hello $Blogger"))
                                 startActivity(secondActivityIntent)
                             }
@@ -111,28 +89,12 @@ class MainActivity : AppCompatActivity() {
                 else -> {
                     binding.tvResult.visibility = View.VISIBLE
                     binding.tvResult.text = "Не удалось найти сотрудника"
-
                 }
 
             }
 
-
-
-
-
-
-
         }
 
-
-
-
-
-
-
-
     }
-
-
 
 }
