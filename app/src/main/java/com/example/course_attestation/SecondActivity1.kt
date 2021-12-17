@@ -43,15 +43,16 @@ class SecondActivity1 : AppCompatActivity() {
             tvResult1.setBackgroundColor(Color.GREEN)
             btSalary.visibility = (View.VISIBLE)
             btHoliday.visibility = (View.INVISIBLE)
-            val list = listOf(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,
-                              16,17,18,19,20,21,22,23,24,25,26,27,28)
+            val list = listOf(0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,
+                              16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31)
             val random = Random
             val temporaryNumber = random.nextInt(list.size)
 
             when(temporaryNumber){
                 2,3,4,22,23,24 -> tvResult1.text = "В этом году осталось $temporaryNumber дня"
                 1,21 -> tvResult1.text = "В этом году остался $temporaryNumber день"
-                5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20 -> tvResult1.text = "В этом году осталось $temporaryNumber дней"
+                //5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20 -> tvResult1.text = "В этом году осталось $temporaryNumber дней"
+                else -> tvResult1.text = "В этом году осталось $temporaryNumber дней"
             }
             
         }
