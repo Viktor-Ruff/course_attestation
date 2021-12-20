@@ -13,7 +13,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
         android:background="#03A9F4"
-        android:text="TextView"
         android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -29,7 +28,6 @@
         android:layout_height="30dp"
         android:background="#03A9F4"
         android:gravity="center"
-        android:text="Hello"
         android:textSize="24dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -43,7 +41,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="Проверить зарплату"
+        android:text="@string/check_salary"
         app:layout_constraintEnd_toEndOf="@+id/tvResult2"
         app:layout_constraintStart_toStartOf="@+id/tvResult2"
         app:layout_constraintTop_toBottomOf="@+id/tvResult2" />
@@ -53,7 +51,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="Проверить отпуск"
+        android:text="@string/check_the_weekend"
         app:layout_constraintEnd_toEndOf="@+id/btSalary"
         app:layout_constraintStart_toStartOf="@+id/btSalary"
         app:layout_constraintTop_toBottomOf="@+id/btSalary" />

@@ -2,7 +2,7 @@ package com.example.course_attestation
 
 object Constance {
         // зарплата
-        const val salary1 = 200000
+        const val salary1 = "200000"
         const val salary2 = 100000
 
 
@@ -18,7 +18,7 @@ object Constance {
 
         //лист
 
-        val Directors = listOf ("Viktor","Vitya","vitya ","viktor","Vitek ","vitek ","vitka ","Vitka ")
+                //val Directors = listOf ("Viktor","Vitya","vitya ","viktor","Vitek ","vitek ","vitka ","Vitka ")
 
 
 

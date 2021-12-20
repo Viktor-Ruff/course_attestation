@@ -1,5 +1,6 @@
 package com.example.course_attestation
 
+import android.annotation.SuppressLint
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -16,6 +17,7 @@ class SecondActivity2 : AppCompatActivity() {
 
     lateinit var tvSecondActivity: TextView
 
+    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second2)
@@ -29,17 +31,17 @@ class SecondActivity2 : AppCompatActivity() {
         val btSalary = findViewById<Button>(R.id.btSalary)
 
         btSalary.setOnClickListener {
-            val temporaryText = "Вам начислено ${Constance.salary2} руб."
+            val temporaryText = getString(R.string.you_earned)+" ${Constance.salary2}"
             val tvResult2 = findViewById<TextView>(R.id.tvResult2)
             tvResult2.visibility = (View.VISIBLE)
             tvResult2.setBackgroundColor(Color.GREEN)
-            tvResult2.text =temporaryText
+            tvResult2.text = temporaryText
             btSalary.visibility = (View.INVISIBLE)
             btHoliday.visibility = (View.VISIBLE)
         }
 
         btHoliday.setOnClickListener {
-            var tvResult2 = findViewById<TextView>(R.id.tvResult2)
+            val tvResult2 = findViewById<TextView>(R.id.tvResult2)
             tvResult2.visibility = (View.VISIBLE)
             tvResult2.setBackgroundColor(Color.GREEN)
             btSalary.visibility = (View.VISIBLE)
@@ -48,14 +50,7 @@ class SecondActivity2 : AppCompatActivity() {
                               16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31)
             val random = Random
             val temporaryNumber = random.nextInt(list.size)
-
-            when(temporaryNumber){
-                2,3,4,22,23,24 -> tvResult2.text = "В этом году осталось $temporaryNumber дня"
-                1,21 -> tvResult2.text = "В этом году остался $temporaryNumber день"
-                //5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20 -> tvResult2.text = "В этом году осталось $temporaryNumber дней"
-                else -> tvResult2.text = "В этом году осталось $temporaryNumber дней"
-            }
-
+            tvResult2.text = getString(R.string.this_year_you_have)+" $temporaryNumber"
         }
 
     }

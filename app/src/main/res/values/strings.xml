@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">course_attestation</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="incorrect_password">Incorrect password</string>
+    <string name="could_not_find_employee">Could not find employee</string>
+    <string name="check">Check</string>
+    <string name="you_earned">You earned (rub) :</string>
+    <string name="this_year_you_have">This year you have (day):</string>
+    <string name="check_salary">Сheck salary</string>
+    <string name="check_the_weekend">Check the weekend</string>
+    <string name="hello">Hello</string>
+
 </resources>

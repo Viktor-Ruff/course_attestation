@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
             Log.d("MyLog", "Result = $nameUser")
 
             when(nameUser){
-                Constance.Director -> {
+                Director -> {
                     binding.tvResult.visibility = View.INVISIBLE
                     binding.edName.visibility = View.INVISIBLE
                     binding.edPassword.visibility = View.VISIBLE
@@ -38,12 +38,12 @@ class MainActivity : AppCompatActivity() {
                         when(PasswordUser){
                             Constance.Director_Password ->{
                                 val secondActivityIntent = Intent(this, SecondActivity2::class.java)
-                                secondActivityIntent.putExtra(HELLO_KEY2, ("Hello $Director"))
+                                secondActivityIntent.putExtra(HELLO_KEY2, (getString(R.string.hello)+" $Director"))
                                 startActivity(secondActivityIntent)
                             }
 
                             else -> {
-                                binding.tvResult.text = "Incorrect password"
+                                binding.tvResult.text = getString(R.string.incorrect_password)
                                 binding.tvResult.setBackgroundColor(Color.RED)
                                 binding.imView.setImageResource(R.drawable.unsuccess)
                                 Log.d("MyLog", "Success = ${R.drawable.unsuccess}")
@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity() {
 
                 }
 
-                Constance.Blogger -> {
+                Blogger -> {
 
                     binding.tvResult.visibility = View.INVISIBLE
                     binding.edName.visibility = View.INVISIBLE
@@ -68,13 +68,13 @@ class MainActivity : AppCompatActivity() {
 
                         when(PasswordUser){
                             Constance.Blogger_Password ->{
-                                val secondActivityIntent = Intent(this, SecondActivity2::class.java)
-                                secondActivityIntent.putExtra(HELLO_KEY1, ("Hello $Blogger"))
+                                val secondActivityIntent = Intent(this, SecondActivity1::class.java)
+                                secondActivityIntent.putExtra(HELLO_KEY1, (getString(R.string.hello)+" $Blogger"))
                                 startActivity(secondActivityIntent)
                             }
 
                             else -> {
-                                binding.tvResult.text = "Incorrect password"
+                                binding.tvResult.text = getString(R.string.incorrect_password)
                                 binding.tvResult.setBackgroundColor(Color.RED)
                                 binding.imView.setImageResource(R.drawable.unsuccess)
                                 Log.d("MyLog", "Success = ${R.drawable.unsuccess}")
@@ -88,7 +88,7 @@ class MainActivity : AppCompatActivity() {
 
                 else -> {
                     binding.tvResult.visibility = View.VISIBLE
-                    binding.tvResult.text = "Не удалось найти сотрудника"
+                    binding.tvResult.text = getString(R.string.could_not_find_employee)
                 }
 
             }

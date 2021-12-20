@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">course_attestation</string>
+    <string name="enter_your_name">Введите ваше имя</string>
+    <string name="enter_your_password">Введите пароль</string>
+    <string name="incorrect_password">Неверный пароль</string>
+    <string name="could_not_find_employee">Сотрудник не найден</string>
+    <string name="check">Проверить</string>
+    <string name="you_earned">Вы заработали (руб) :</string>
+    <string name="this_year_you_have">В этом году осталось (дн.) :</string>
+    <string name="check_salary">Проверить зарплату</string>
+    <string name="check_the_weekend">Проверить отпускные дни</string>
+    <string name="hello">Привет</string>
+</resources>
