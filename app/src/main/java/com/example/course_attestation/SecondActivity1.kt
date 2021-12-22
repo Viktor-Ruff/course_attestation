@@ -25,7 +25,7 @@ class SecondActivity1 : AppCompatActivity() {
         val helloValue: String? = intent.extras?.getString(HELLO_KEY1)
         tvSecondActivity.text = helloValue
         val background1 = findViewById<View>(R.id.bkImage1)
-        background1.setBackgroundResource(R.drawable.good_day1)
+        background1.setBackgroundResource(R.drawable.backgroundimage_second1)
         val btHoliday = findViewById<Button>(R.id.btHoliday)
         val btSalary = findViewById<Button>(R.id.btSalary)
 

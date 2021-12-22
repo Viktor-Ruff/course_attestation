@@ -14,7 +14,7 @@
         android:layout_marginTop="80dp"
         android:background="#03A9F4"
         android:textAlignment="center"
-        android:textSize="24sp"
+        android:textSize="22sp"
         android:textStyle="bold"
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="@+id/tv_second_activity"
@@ -24,10 +24,11 @@
 
     <TextView
         android:id="@+id/tv_second_activity"
-        android:layout_width="215dp"
-        android:layout_height="30dp"
-        android:background="#03A9F4"
+        android:layout_width="232dp"
+        android:layout_height="37dp"
+        android:background="#0003A9F4"
         android:gravity="center"
+        android:textColor="#FFFFFF"
         android:textSize="24dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

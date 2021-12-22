@@ -3,22 +3,17 @@ package com.example.course_attestation
 object Constance {
         // зарплата
         const val salary1 = "200000"
-        const val salary2 = 100000
+        const val salary2 = "100000"
 
+        // Пароли
 
-        // Должности
-        const val Director = "Viktor"
-        const val Blogger = "Azaliya"
+        const val Director_Password = "2244"
+        const val Blogger_Password = "3355"
 
+        //имена пользователей
 
-         // Пароли
-
-        const val Director_Password = 2244
-        const val Blogger_Password = 3355
-
-        //лист
-
-                //val Directors = listOf ("Viktor","Vitya","vitya ","viktor","Vitek ","vitek ","vitka ","Vitka ")
+         var Directors = listOf ("Viktor","Vitya","vitya ","viktor","Vitek ","vitek ","vitka ","Vitka","VIKTOR","vIKTOR",
+                                 "Azaliya","azaliya","azal9","azalka","Azalka","Az","az","Azalya","azalya")
 
 
 
